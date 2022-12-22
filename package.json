@@ -1,0 +1,22 @@
+{
+    "name": "@lumeweb/relay-plugin-discovery-irc",
+    "version": "0.1.0",
+    "type": "module",
+    "scripts": {
+        "build": "node build.js"
+    },
+    "devDependencies": {
+        "@lumeweb/peer-discovery": "https://git.lumeweb.com/LumeWeb/peer-discovery.git",
+        "@lumeweb/relay-types": "https://git.lumeweb.com/LumeWeb/relay-types.git",
+        "@types/b4a": "^1.6.0",
+        "@types/prettier": "^2",
+        "esbuild": "^0.16.10",
+        "prettier": "^2.8.1",
+        "rollup": "^3.7.5"
+    },
+    "dependencies": {
+        "@ctrl/irc": "^2.1.0",
+        "b4a": "^1.6.1",
+        "json-stringify-deterministic": "^1.0.8"
+    }
+}
