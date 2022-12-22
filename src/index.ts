@@ -48,8 +48,6 @@ const plugin: Plugin = {
           .from(api.identity.sign(b4a.from(jsonStringify(data))))
           .toString("hex");
 
-        api.logger.info(api.identity.verify(b4a.from(json), data.signature));
-
         client.say(from, jsonStringify(data));
       });
       client.addListener("error", (message: Message) => {
