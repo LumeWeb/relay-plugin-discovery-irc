@@ -42,8 +42,6 @@ const plugin: Plugin = {
           timestamp,
         } as SignedPeerResponse;
 
-        let json = jsonStringify(data);
-
         data.signature = b4a
           .from(api.identity.sign(b4a.from(jsonStringify(data))))
           .toString("hex");
