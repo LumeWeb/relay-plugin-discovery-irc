@@ -3,7 +3,7 @@
         "discoveryirc": {
             "networks": [
                 {
-                    "host": "irc.ergo.chat",
+                    "host": "irc.liberta.casa",
                     "port": 6697,
                     "ssl" : true
                 }
