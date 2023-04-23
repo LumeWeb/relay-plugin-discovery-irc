@@ -1,0 +1,38 @@
+{
+    "plugins": [
+        "@semantic-release/commit-analyzer",
+        "@semantic-release/release-notes-generator",
+        "@semantic-release/changelog",
+        [
+            "@semantic-release/exec",
+            {
+                "publishCmd": "git clone https://git.lumeweb.com/LumeWeb/circle-ci-publish.git ci; ./ci/publish.sh \"${nextRelease.version}\""
+            }
+        ],
+        [
+            "@semantic-release/npm",
+            {
+                "npmPublish": false
+            }
+        ],
+        [
+            "@semantic-release/git",
+            {
+                "assets": [
+                    "package.json"
+                ]
+            }
+        ]
+    ],
+    "branches": [
+        "master",
+        {
+            name: "develop",
+            prerelease: true
+        },
+        {
+            name: "develop-*",
+            prerelease: true
+        },
+    ]
+}
