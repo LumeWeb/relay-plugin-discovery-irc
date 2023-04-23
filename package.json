@@ -6,8 +6,8 @@
         "build": "node build.js"
     },
     "devDependencies": {
-        "@lumeweb/peer-discovery": "https://git.lumeweb.com/LumeWeb/peer-discovery.git",
-        "@lumeweb/relay-types": "https://git.lumeweb.com/LumeWeb/relay-types.git",
+        "@lumeweb/peer-discovery": "git+https://git.lumeweb.com/LumeWeb/peer-discovery.git",
+        "@lumeweb/interface-relay": "git+https://git.lumeweb.com/LumeWeb/interface-relay.git",
         "@types/b4a": "^1.6.0",
         "@types/prettier": "^2",
         "esbuild": "^0.16.10",
