@@ -1,4 +1,4 @@
-import type { Plugin, PluginAPI } from "@lumeweb/relay-types";
+import type { Plugin, PluginAPI } from "@lumeweb/interface-relay";
 import type { Peer } from "@lumeweb/peer-discovery";
 import { IrcClient } from "@ctrl/irc";
 import b4a from "b4a";
